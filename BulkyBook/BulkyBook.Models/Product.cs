@@ -58,6 +58,7 @@ namespace BulkyBook.Models
         [Display(Name ="Cover Type")]
         public int CoverTypeId { get; set; }
         [ValidateNever]
+        [ForeignKey("CoverTypeId")]
         public Category CoverType { get; set; }
 
 
